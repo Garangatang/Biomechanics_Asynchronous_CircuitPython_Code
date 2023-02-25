@@ -6,3 +6,7 @@ Sampled data is then discretized and broadcasted via Bluetooth to an mHealth app
 
 The Python file host_ble_receiver.py can be loaded onto any computer with Bluetooth data receiving capabilities in order to receive data
 from the nrf52840 chip after it has discretized an adequate amount of data.
+
+the lib folder contains all the CircuitPython Dependencies which need to be loaded onto the microcontroller in order for all functions to work.
+
+This repository as is can be downloaded and all files can be uploaded directly to a Seeeduino nrf52840 microcontroller.
