@@ -9,4 +9,4 @@ from the nrf52840 chip after it has discretized an adequate amount of data.
 
 the lib folder contains all the CircuitPython Dependencies which need to be loaded onto the microcontroller in order for all functions to work.
 
-This repository as is can be downloaded and all files can be uploaded directly to a Seeeduino nrf52840 microcontroller.
+This repository as is can be downloaded and all files except host_ble_receiver.py can be uploaded directly to a Seeeduino nrf52840 microcontroller.
