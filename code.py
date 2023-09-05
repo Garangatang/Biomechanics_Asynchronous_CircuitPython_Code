@@ -31,9 +31,22 @@ from PeakExtr import *
 gc.enable()
 
 # Setting up LEDs on board
-RED_LED = board.RED_LED
-GREEN_LED = board.GREEN_LED
-BLUE_LED = board.BLUE_LED
+RED_LED = 0
+GREEN_LED = 0
+BLUE_LED = 0
+try:
+    RED_LED = board.RED_LED
+    GREEN_LED = board.GREEN_LED
+    BLUE_LED = board.BLUE_LED
+except Exception as e:
+    print(e)
+    
+try:
+    RED_LED = board.LED_RED
+    GREEN_LED = board.LED_GREEN
+    BLUE_LED = board.LED_BLUE
+except Exception as e:
+    print(e)
 
 # Create a RGB LED object
 led = adafruit_rgbled.RGBLED(RED_LED, GREEN_LED, BLUE_LED)
